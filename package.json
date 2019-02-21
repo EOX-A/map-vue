@@ -1,0 +1,25 @@
+{
+  "name": "map-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard src/**/*js",
+    "build": "rollup -c",
+    "watch": "rollup -c --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^0.67.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-serve": "^0.6.0",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "ol": "^5.3.0",
+    "vue": "^2.5.17"
+  }
+}
