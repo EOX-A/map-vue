@@ -1,6 +1,6 @@
 # map-vue
 
-> Openlayers for vue
+> Vue bindings for OpenLayers 
 
 ## Setup
 
@@ -15,4 +15,4 @@ $ npm run watch
 $ npm run build
 ```
 
-To try out the example, run a server in the root folder (for example `python3 -m hrrp.server`) and visit `localhost:8000/example/`.
+To try out the example, run a server in the root folder (for example `python3 -m http.server`) and visit `localhost:8000/example/`.
