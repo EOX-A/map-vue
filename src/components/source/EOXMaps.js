@@ -1,5 +1,5 @@
 import WMTSSource from 'ol/source/WMTS'
-import WMTSTileGrid from 'ol/tilegrid/wmts'
+import WMTSTileGrid from 'ol/tilegrid/WMTS'
 import { get as getProjection } from 'ol/proj'
 import { getWidth, getTopLeft } from 'ol/extent'
 
