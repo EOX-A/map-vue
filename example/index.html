@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map-vue Example</title>
+    <style>
+      body, #app {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="../dist/bundle.js"></script>
+    <div id="app">
+      <mv-map :center="[0, 0]" :zoom="3" projection="EPSG:4326">
+        <mv-layer-group>
+          <mv-layer-tile>
+            <mv-source-eox-maps layer="s2cloudless-2018"></mv-source-eox-maps>
+          </mv-layer-tile>
+        </mv-layer-group>
+        <!-- <mv-layer-image>
+          <mv-source-tiff
+            :
+          />
+        </mv-layer-image> -->
+        <!-- <mv-layer-tile :opacity="0.5">
+          <mv-source-osm></mv-source-osm>
+        </mv-layer-tile> -->
+      </mv-map>
+    </div>
+    <script>
+    new Vue({
+      el: '#app',
+    });
+    </script>
+  </body>
+</html>
